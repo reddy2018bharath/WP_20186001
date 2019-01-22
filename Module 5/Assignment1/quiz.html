@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Quiz</title>
+	<link rel = "stylesheet" href = "quiz.css">
+	<script type="text/javascript" src = "quiz.js"></script>
+	<style>
+	.header {
+		text-align: right;
+		height: 40px;
+		display: flex;
+	}
+	.style {
+		background-color: darkblue;
+		width: 50px;
+	}
+	.stylenew {
+		font-size: 16px;
+		width: 150px;
+		background-color: white;
+		margin-right: 20px
+	}
+	.rightarrow {
+		width: 0;
+			  height: 0;
+			  border-top: 20px solid transparent;
+			  border-bottom: 20px solid transparent;
+			  border-left: 20px solid darkblue;
+	}
+	.leftarrow {
+		width: 0;
+			  height: 0;
+			  border-top: 20px solid transparent;
+			  border-bottom: 20px solid transparent;
+			  border-left: 20px solid white;
+	}
+	.page {
+		border: 30px solid lightblue;
+		padding: 20px;
+	}
+	.page1 {
+		text-align: right;
+		background-color: lightblue;
+		height: 50px;
+	}
+	/*.dotted {
+		height: 20px
+	}*/
+	#txt {
+		color: darkblue;
+	}
+</style>
+</head>
+
+<body onload = "display()">
+	<div class = "header">
+		<div class = "style"></div>
+		<div class = "rightarrow"></div>
+		<div class = "stylenew">
+			<center><p id = "txt">Learn by doing</p></center></div>
+		<div class = "leftarrow" style="background-color: darkblue"></div>
+		<div style = "background-color: darkblue; width: 100%"></div>
+	</div>
+	<div style="border:5px solid blue">
+		<div style="border:20px solid lightblue">
+			</div>
+
+	<div class = "page" id = "page" style = "background-color: white; height: 500px">
+	<ul>
+		<li>
+			<p id = "question1"></p>
+		</li>
+		<button type="button" width = "25px" class= "btn btn-info" data-toggle="collapse" data-target="#demo">Hint</button>
+		<div id = "demo" class = "collapse">
+			<div class = "alert alert-warning alert-dismissible" id = "hint1" style = "background-color: lightyellow height: 10px">
+				<a href = "#" class = "close" data-dismiss = "alert" aria-label = "close">&times;</a>
+			</div>
+		</div>
+		<div id = "radio1"></div>
+		<div id = "feedback1"></div>
+		<!-- <hr class = "dotted/"> -->
+		<p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+		<li> <p id = "question2"></p></li>
+		<button type="button" width = "25px" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Hint</button>
+		<div id = "demo1" class = "collapse">
+			<div class = "alert alert-warning alert-dismissible" id = "hint2" style = "background-color: lightyellow">
+				<a href = "#" class = "close" data-dismiss = "alert" aria-label = "close">&times;</a>
+			</div>
+		</div>
+		<div id = "radio2"></div>
+		<div id = "feedback2"></div>
+	</ul>
+	<div>
+		<button type = "button" style = "float: left;" id = "Previous" onclick = "Previous()">Previous</button>
+		<button type = "button" style = "float: right;" id = "Next" onclick = "Next()">Next</button>
+	</div>
+</div>
+
+<div class = "page1">
+	<button type = "button" onclick = "reset()">Reset this Activity</button></div>
+</div>
+</body>
+</html>
+
