@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="application/json" src="json/catalog.json"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class ="row">
+            <div class = "col-md-4 well" id = "image">
+                <div></div>
+            </div>   
+            <div class = "col-md-8">
+                <div class="row ">
+                    <div class="col-md-3 well" id="votec">
+
+                    </div>
+                    <div class="col-md-9">
+                        <div  class="row ">
+                            <div class="col-md-12 well" id="mTitle">
+
+                            </div>
+                        </div>
+                        <div  class="row">
+                            <div class="col-md-12 well" id="rDisc">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 well" id="mOverview">
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 well" id="mInfo">
+                         <button type = "button" onclick="delete()"> Delete </button>
+                          <button type = "button" onclick="edit()"> Edit </button>
+                       
+
+
+                        
+                    </div>
+                </div>
+            </div>          
+        </div>
+        <div class = "row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary" id = 'previous' onclick="prevpressed()">Previous</button>
+            </div>
+            <div class="col-md-6" align="right">
+                <button type="button" class="btn btn-primary" id = 'next' onclick="nextpressed()">next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
